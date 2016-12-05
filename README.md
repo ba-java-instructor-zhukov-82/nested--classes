@@ -11,16 +11,16 @@ Here is the solution:
 
 ```java
 public static void shift(Object[] array) {
-        for(int i = 0; i < array.length; ++i) {
-            int min = i, max = array.length - 1;
-            int r = (int)(min + (Math.random() * (max - min)));
-            swap(array, i, r);
-        }
+    for(int i = 0; i < array.length; ++i) {
+        int min = i, max = array.length - 1;
+        int r = (int)(min + (Math.random() * (max - min)));
+        swap(array, i, r);
     }
+}
 
-    public static void swap(Object[] array, int i, int r) {
-        Object aCopy = array[i];
-        array[i] = array[r];
-        array[r] = aCopy;
-    }
+public static void swap(Object[] array, int i, int r) {
+    Object aCopy = array[i];
+    array[i] = array[r];
+    array[r] = aCopy;
+}
 ```
